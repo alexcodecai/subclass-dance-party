@@ -1,26 +1,25 @@
-var BlinkyDancer = function(top,left,timeBetweenSteps) {
-   //console.log("BlinkDancer k");
-   //debugger;
+var Star = function(top, left, timeBetweenSteps) {
+    //console.log("star k");
     Dancer.call(this,top,left,timeBetweenSteps);
-    this.$node.addClass("blink")
-    //removeClass("dancer");
-    // this.$node.removeClass("dancer");
-     //this.$node.prepend('<img class="LBJ" src="image/a51.jpg" />');
+    this.$node.addClass("star");
+   //n this.$node = $('<span class="Star"></span>')
+   
+  //var blinkyDancer = Dancer(top, left, timeBetweenSteps);
 
   // we plan to overwrite the step function below, but we still want the superclass step behavior to work,
   // so we must keep a copy of the old version of this function
     //this.timeBetweenSteps = timeBetweenSteps;
-    var oldStep = this.step;
+    //var oldStep = blinkyDancer.step;
   //  this.oldStep = BlinkyDancer.step;
   
-
+    var oldStep = this.step;
  // return blinkyDancer;
 };
 
-BlinkyDancer.prototype = Object.create(Dancer.prototype);
-BlinkyDancer.prototype.constructor = BlinkyDancer;
+Star.prototype = Object.create(Dancer.prototype);
+Star.prototype.constructor = Star;
 
-BlinkyDancer.prototype.step = function() {
+Star.prototype.step = function() {
    
     Dancer.prototype.step.call(this);
    // call the old version of step at the beginning of any call to this new version of step
@@ -29,15 +28,7 @@ BlinkyDancer.prototype.step = function() {
     // See http://api.jquery.com/category/effects/ for this and
     // other effects you can use on a jQuery-wrapped html tag.
    //console.log(this.$node)
-   
-   
-   
-   this.$node.toggle().delay(800);
+  // console.log(this);
+   this.$node.fadeToggle();
    
   };
-
-
-//   BlinkyDancer.prototype.lineUp = function(top, left) {
-//     this.setPosition(top, left);
-//     this.$node.css('border-color', this._randomColor());
-//  };

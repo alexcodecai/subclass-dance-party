@@ -2,8 +2,11 @@ body, html{
   height:100%;
 }
 body{
-  margin: 0px;
-  background-color:#444;
+  background: url("https://arts.kennesaw.edu/_ldp/.private_ldp/a120771/production/master/e405b657-b4c7-421b-befe-08bf91a96fb4.jpg");
+  background-repeat: no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  background-color: white;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -15,13 +18,97 @@ body, a:link, a:visited, a:active{
 }
 .topbar{
   height:32px;
-  background-color: #555;
+  background-color: black;
 }
 .title{
-  background-color: #777;
+  background-color: black;
 }
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
+  /* background: url('image/a51.jpg');
+  background-size: cover; */
+  width: 50px;
+  height: 50px; 
+  /* border:50px solid blue;
+  border-radius:30px; */
   position:absolute;
 }
+
+.blink{
+  position:absolute;
+  background: url('image/giphy.gif');
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+}
+.star{
+  position:absolute;
+  background: url('image/tenor.gif');
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+
+}
+
+
+.Kids{
+  position:absolute;
+  background: url('image/tenor.gif');
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+
+}
+
+.lineupButton {
+  position: absolute;
+  left: 30px;
+  top: 10px;
+  
+}
+
+/* addStarButton{
+  color : teal;
+  font-size: 40px;
+} */
+
+
+
+/* .star {
+  margin: 50px 0;
+  position: relative;
+  display: block;
+  color: red;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid red;
+  border-left: 100px solid transparent;
+  transform: rotate(35deg);
+}
+.star:before {
+  border-bottom: 80px solid red;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -45px;
+  left: -65px;
+  display: block;
+  content: '';
+  transform: rotate(-35deg);
+}
+.star:after {
+  position: absolute;
+  display: block;
+  color: red;
+  top: 3px;
+  left: -105px;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid red;
+  border-left: 100px solid transparent;
+  transform: rotate(-70deg);
+  content: '';
+} */
